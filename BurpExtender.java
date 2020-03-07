@@ -23,7 +23,7 @@ public class BurpExtender implements IBurpExtender, IMessageEditorTabFactory{
 			helpers = callbacks.getHelpers();
 
 			stdout = new PrintWriter(callbacks.getStdout(), true);
-			callbacks.setExtensionName("Unicode Converter");
+			callbacks.setExtensionName("Unicode Decoder v1.0 by JackyTsuuuy");
 			// 注册 menu factory
 			callbacks.registerContextMenuFactory(new Menu());
 			
