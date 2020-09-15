@@ -30,42 +30,11 @@ public class Dialog extends JDialog {
 	getContentPane().setLayout(new BorderLayout());
 	contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
 	getContentPane().add(contentPanel, BorderLayout.CENTER);
-//	GridBagLayout gbl_contentPanel = new GridBagLayout();
 	gbl_contentPanel.columnWidths = new int[]{0, 0};
 	gbl_contentPanel.rowHeights = new int[]{0, 0};
 	gbl_contentPanel.columnWeights = new double[]{1.0, Double.MIN_VALUE};
 	gbl_contentPanel.rowWeights = new double[]{1.0, Double.MIN_VALUE};
-//	contentPanel.setLayout(gbl_contentPanel);
-//	{
-//		JScrollPane scrollPane = new JScrollPane();
-//		GridBagConstraints gbc_scrollPane = new GridBagConstraints();
-//		gbc_scrollPane.fill = GridBagConstraints.BOTH;
-//		gbc_scrollPane.gridx = 0;
-//		gbc_scrollPane.gridy = 0;
-//		contentPanel.add(scrollPane, gbc_scrollPane);
-//		{
-//			JTextArea txtrTest = new JTextArea();
-//			txtrTest.setText(messageString);
-//			txtrTest.setLineWrap(true);
-//			scrollPane.setViewportView(txtrTest);
-//		}
-//	}
-//	{
-//	    JPanel buttonPane = new JPanel();
-//	    buttonPane.setLayout(new FlowLayout(FlowLayout.RIGHT));
-//	    getContentPane().add(buttonPane, BorderLayout.SOUTH);
-//	    {
-//		JButton okButton = new JButton("OK");
-//		okButton.setActionCommand("OK");
-//		buttonPane.add(okButton);
-//		getRootPane().setDefaultButton(okButton);
-//	    }
-//	    {
-//		JButton cancelButton = new JButton("Cancel");
-//		cancelButton.setActionCommand("Cancel");
-//		buttonPane.add(cancelButton);
-//	    }
-//	}
+
     }
     
     public void setString(String str) {
